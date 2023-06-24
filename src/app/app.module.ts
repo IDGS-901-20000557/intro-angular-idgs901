@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './grupos/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './grupos/formularios/operas/operas.module';
+import { AlumnosFilterPipe } from './grupos/alumnos-filter.pipe';
+import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificacion-alum.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { OperasModule } from './grupos/formularios/operas/operas.module';
     evnComponent,
     IricComponent,
     MenuComponent,
-    SumaComponent
+    SumaComponent,
+    AlumnosFilterPipe,
+    CalificacionAlumComponent
   ],
   imports: [
     BrowserModule,
