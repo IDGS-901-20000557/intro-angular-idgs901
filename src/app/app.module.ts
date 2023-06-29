@@ -6,12 +6,15 @@ import { utlComponent } from './utl/utl.component';
 import { evnComponent } from './evn/evn.component';
 import { IricComponent } from './grupos/iric/iric.component';
 import { MenuComponent } from './grupos/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumaComponent } from './grupos/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './grupos/formularios/operas/operas.module';
 import { AlumnosFilterPipe } from './grupos/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificacion-alum.component';
+import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,17 @@ import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificaci
     MenuComponent,
     SumaComponent,
     AlumnosFilterPipe,
-    CalificacionAlumComponent
+    CalificacionAlumComponent,
+    AlumnoReactiveComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    OperasModule
+    OperasModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
